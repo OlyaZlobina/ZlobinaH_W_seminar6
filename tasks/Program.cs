@@ -98,3 +98,31 @@
 // Console.Write(DecimalNum + " ->" + TenNumberInTwoNumber(DecimalNum));
 // Console.WriteLine();
 
+int [] decimalNumArray(int number)
+{
+    int[] array = new int []{};
+    int count = 0;
+    while(number >= 1)
+    {
+        {
+            int i = 0; i++;
+            count = number /2;
+            array[i] = number % 2;
+        }
+    }
+    return array;
+}
+
+void PrintdecimalNumArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+}
+
+Console.Clear();
+Console.Write("Input  namber: ");
+int Num10 = Convert.ToInt32(Console.ReadLine());
+decimalNumArray(Num10);
+PrintdecimalNumArray()
