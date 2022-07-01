@@ -68,3 +68,33 @@
 // PrintPositivNumbers(MyArray);
 // PositivNumbersCount(MyArray);
 // Console.WriteLine();
+
+
+// Задача 42: Напишите программу, которая будет преобразовывать десятичное число в двоичное.
+// 45 -> 101101
+// 3 -> 11
+// 2 -> 10
+
+
+// int TenNumberInTwoNumber(int num10)
+// {
+//     int TenNum = 0;
+//     int count = 0;
+//     while(num10 >= 1)
+//     {
+//         if (count == 0)
+//             count = 1;
+//         else
+//             count = count * 10;
+//         TenNum = TenNum + (num10 % 2) * count;
+//         num10 = num10 / 2;
+//     }
+//     return TenNum;
+// }
+
+// Console.Clear();
+// Console.Write("Input decimal number: ");
+// int DecimalNum = Convert.ToInt32(Console.ReadLine());
+// Console.Write(DecimalNum + " ->" + TenNumberInTwoNumber(DecimalNum));
+// Console.WriteLine();
+
