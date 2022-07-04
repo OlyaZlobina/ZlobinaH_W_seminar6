@@ -98,31 +98,37 @@
 // Console.Write(DecimalNum + " ->" + TenNumberInTwoNumber(DecimalNum));
 // Console.WriteLine();
 
-int [] decimalNumArray(int number)
+void  decimalNumArray(int number)
 {
-    int[] array = new int []{};
+    int[] arr = new int[]{};
+    string[] array = new string [arr.Length];
     int count = 0;
+    int i = 0;
     while(number >= 1)
     {
         {
-            int i = 0; i++;
-            count = number /2;
-            array[i] = number % 2;
+            count = number % 2;
+            arr[i] = count;
+            array[i] = arr[i].ToString();
+            i++;
         }
+        number = number / 2;
     }
-    return array;
+    Console.Write(array);   
 }
 
-void PrintdecimalNumArray(int[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write(array[i] + " ");
-    }
-}
 
 Console.Clear();
 Console.Write("Input  namber: ");
-int Num10 = Convert.ToInt32(Console.ReadLine());
-decimalNumArray(Num10);
-PrintdecimalNumArray()
+int Num = Convert.ToInt32(Console.ReadLine());
+int[] myArray = Convert.ToString(Num, 2));
+
+
+
+
+
+// Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+//b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
+
+
+
